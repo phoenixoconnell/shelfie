@@ -11,6 +11,9 @@ massive(DATABASE_STRING).then(db => {
     console.log("Database Connected");
 });
 
+app.get('/api/inventory');
+app.post('/api/product');
+
 app.listen(5150, () => {
     console.log('Listening on port 5150')
 });
